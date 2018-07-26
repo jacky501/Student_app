@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@drawable/background_login"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="350dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <EditText
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:id="@+id/loginID"
+                android:layout_width="300dp"
+                android:hint="Enter your student id"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                android:background="@drawable/formstyle"/>
+
+            <EditText
+                android:drawableLeft="@drawable/ic_lock_black_24dp"
+                android:inputType="textPassword"
+                android:layout_marginTop="15dp"
+                android:id="@+id/loginPassword"
+                android:layout_width="300dp"
+                android:hint="Enter your password"
+                android:layout_height="wrap_content"
+                android:background="@drawable/formstyle"/>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_marginTop="17dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Sign In"
+                android:drawableRight="@drawable/ic_send_black_24dp"
+                android:textStyle="bold"
+                android:textColor="#FFF"
+                android:background="@drawable/buttonstyle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="student login provided by school to authanticated student."
+                android:textColor="#ffc917"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
